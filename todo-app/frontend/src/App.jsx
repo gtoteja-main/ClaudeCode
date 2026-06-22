@@ -3,7 +3,7 @@ import AddTodo from './components/AddTodo';
 import TodoItem from './components/TodoItem';
 import FilterBar from './components/FilterBar';
 
-const API = '/api/todos';
+const API = `${process.env.REACT_APP_API_URL || ''}/api/todos`;
 
 export default function App() {
   const [todos, setTodos] = useState([]);
